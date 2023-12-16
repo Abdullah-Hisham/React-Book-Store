@@ -11,7 +11,7 @@ const BookPage = () => {
   const { id } = useParams();
   const [qty, setQty] = useState(1);
 
-  const book = books.find((b) => b.id === +id);
+  const book = books.find((book) => book.id ===  parseInt(id) );
   console.log(id)
   return (
     <div className="book">
